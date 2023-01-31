@@ -1,7 +1,10 @@
-function mostrar()
-{
-	//tomo la edad  
-	alert("ok");
-	
+function mostrar() {
+	let edad;
 
-}//FIN DE LA FUNCIÓN
+	edad = document.getElementById(txtIdEdad).Value;
+
+	if (edad > 17) {
+		alert("ok");
+	}
+
+}
