@@ -5,11 +5,14 @@ function mostrar() {
 
 	let nombreIngresado;
 	let edadIngresada;
+	let mensaje
 
 	nombreIngresado = document.getElementById("txtIdNombre").value;
 	edadIngresada = document.getElementById("txtIdEdad").value;
 
-	alert("Usted se llama " + nombreIngresado + " y tiene " + edadIngresada + " años.");
+	mensaje = "Usted se llama " + nombreIngresado + " y tiene " + edadIngresada + " años."
+
+	alert(mensaje);
 }
 
 // let nombreingresado  let edadingresado  Nombreingresado = document.getElementById(txtIdNombre).value    Edad = document.getElementById(txtIdNombre).value"
