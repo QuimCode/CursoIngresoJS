@@ -15,4 +15,3 @@ function mostrar() {
 	alert(mensaje);
 }
 
-// let nombreingresado  let edadingresado  Nombreingresado = document.getElementById(txtIdNombre).value    Edad = document.getElementById(txtIdNombre).value"

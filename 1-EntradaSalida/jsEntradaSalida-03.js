@@ -15,4 +15,4 @@ function mostrar() {
 }
 
 
-// let nombreingresado nombreingresado = document.getElementById("txtIdNombre").value;  alert(nombreingresado) //
+
