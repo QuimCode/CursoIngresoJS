@@ -4,57 +4,37 @@ B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar() {
-    let precio1;
-    let precio2;
-    let precio3;
+
+    let precioUno;
+    let precioDos;
+    let precioTres;
     let suma
 
-    precio1 = perseInt(document.getElementById("txtIdPrecioUno").value);
-    precio2 = perseInt(document.getElementById("txtIdPrecioDos").value);
-    precio3 = perseInt(document.getElementById("txtIdPrecioTres").value);
+    precioUno = parseInt(document.getElementById("txtIdPrecioUno").value);
+    precioDos = parseInt(document.getElementById("txtIdPrecioDos").value);
+    precioTres = parseInt(document.getElementById("txtIdPrecioTres").value);
 
-    suma = precio1 + precio2 + precio3;
+    suma = precioUno + precioDos + precioTres;
 
-    do {
-        alert
-    } while (condition); { "tu suma da: " + suma }
-
+    mensaje = "La suma de todos sus productos es ... " + suma;
+    alert(mensaje);
 }
+
 function Promedio() {
 
+    let precioUno;
+    let precioDos;
+    let precioTres;
+
+    precioUno = parseInt(document.getElementById("txtIdPrecioUno").value);
+    precioDos = parseInt(document.getElementById("txtIdPrecioDos").value);
+    precioTres = parseInt(document.getElementById("txtIdPrecioTres").value);
 
 
 }
+
 function PrecioFinal() {
-    let precio1;
-    let precio2;
-    let precio3;
-    let suma;
-    let resultado;
 
-    precio1 = perseInt(document.getElementById("txtIdPrecioUno").value);
-    precio2 = perseInt(document.getElementById("txtIdPrecioDos").value);
-    precio3 = perseInt(document.getElementById("txtIdPrecioTres").value);
 
-    suma = (precio1 + precio2 + precio3) * 0.21;
 
-    resultado = suma;
-
-    alert = ("El precio Final " + resultado);
 }
-
-//     let precio1;
-let precio2;
-let precio3;
-let suma;
-let resultado;
-
-precio1 = perseInt(document.getElementById("txtIdPrecioUno").value);
-precio2 = perseInt(document.getElementById("txtIdPrecioDos").value);
-precio3 = perseInt(document.getElementById("txtIdPrecioTres").value);
-
-suma = (precio1 + precio2 + precio3) * 0.21;
-
-resultado = suma;
-
-alert = ("El precio Final " + resultado); //

@@ -12,11 +12,9 @@ function mostrarAumento() {
 	let resultado;
 
 	numImporte = document.getElementById("txtIdImporte").value;
-
 	numImporte = parseInt(numImporte);
 
-	numDescuento = (numImporte / sueldoCuenta) * 25;
-
+	numDescuento = numImporte / sueldoCuenta * 25;
 	resultado = numImporte - numDescuento;
 
 	document.getElementById("txtIdResultado").value = resultado;
