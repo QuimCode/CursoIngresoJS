@@ -52,6 +52,7 @@ function PrecioFinal() {
     let IVA = 1.21;
     let suma;
     let finalIva;
+    let mensaje
 
     precioUno = parseInt(document.getElementById("txtIdPrecioUno").value);
     precioDos = parseInt(document.getElementById("txtIdPrecioDos").value);

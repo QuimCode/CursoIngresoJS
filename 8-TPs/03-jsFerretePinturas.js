@@ -12,7 +12,6 @@ function FahrenheitCentigrados() {
     gradoCentigrado = (gradoFahrenheit - 32) * 5 / 9;
 
     alert("Los " + gradoFahrenheit + " Fahrenheit ingresados son " + gradoCentigrado + " Centigrados.");
-
 }
 
 
@@ -25,6 +24,5 @@ function CentigradosFahrenheit() {
     gradoFahrenheit = (gradoCentigrado * 9 / 5) + 32;
 
     alert("Los " + gradoCentigrado + " Centigrados ingresados son " + gradoFahrenheit + " Fahrenheit.");
-
 }
 

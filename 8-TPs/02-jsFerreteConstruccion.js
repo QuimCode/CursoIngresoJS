@@ -20,7 +20,6 @@ function Rectangulo() {
     sumaLarAnc = (largoTerreno + anchoTerreno) * ladosTerreno * hilosAlambre;
 
     alert("La Cantidad de alambre a comprar es ... " + sumaLarAnc);
-
 }
 
 
@@ -42,7 +41,6 @@ function Circulo() {
     sumaLarAncRad = (largoTerreno + anchoTerreno + radioCirculo) * hilosAlambre;
 
     alert("La Cantidad de alambre a comprar es ... " + sumaLarAncRad);
-
 }
 
 
