@@ -1,6 +1,9 @@
-function mostrar()
-{
-	//tomo la edad  
+function mostrar() {
+	//tomo la edad 
+	let edadIngresada;
+
+	edadIngresada = document.getElementById("txtIdEdad").value;
+
 	alert("ok");
 
 
