@@ -1,3 +1,4 @@
+/*Quimey Alejo Fontan*/
 function mostrar() {
 
 	let edadIngresada;
