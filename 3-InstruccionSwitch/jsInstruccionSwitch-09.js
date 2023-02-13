@@ -1,6 +1,6 @@
-function mostrar()
-{
-	var estacionIngresada =txtIdEstacion.value;
+/*Quimey Alejo Fontan*/
+function mostrar() {
+	var estacionIngresada = txtIdEstacion.value;
 	alert(estacionIngresada);
 
 }//FIN DE LA FUNCIÓN

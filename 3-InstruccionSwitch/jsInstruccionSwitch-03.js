@@ -1,10 +1,10 @@
-function mostrar()
-{
+/*Quimey Alejo Fontan*/
+function mostrar() {
 	//tomo el mes
-	var mesDelAño =txtIdMes.value;
+	var mesDelAño = txtIdMes.value;
 	alert(mesDelAño);
-	
-	
+
+
 
 
 }//FIN DE LA FUNCIÓN

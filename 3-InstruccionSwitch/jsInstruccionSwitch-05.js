@@ -1,10 +1,10 @@
-function mostrar()
-{
+/*Quimey Alejo Fontan*/
+function mostrar() {
 	//tomo la hora
-	var horaDelDia =txtIdHora.value;
+	var horaDelDia = txtIdHora.value;
 	alert(horaDelDia);
-	
-	
+
+
 
 
 
