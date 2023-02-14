@@ -1,22 +1,25 @@
 /*Quimey Alejo Fontan*/
 function mostrar() {
-	let destinoViaje
+	let destinoViaje;
+	let mensaje;
 
 	destinoViaje = document.getElementById("txtIdDestino").value;
 
 	switch (destinoViaje) {
 		case "Bariloche":
-			alert("Oeste");
+			mensaje = "Oeste";
 			break;
 		case "Cataratas":
-			alert("Norte");
+			mensaje = "Norte";
 			break;
 		case "Ushuaia":
-			alert("Sur");
+			mensaje = "Sur";
 			break;
 		case "Mar del plata":
-			alert("Este");
+			mensaje = "Este";
 			break;
 	}
+
+	alert(mensaje);
 
 }//FIN DE LA FUNCIÓN
