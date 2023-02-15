@@ -1,10 +1,17 @@
-/*
+/* Quimey Alejo Fontan
 al presionar el botón mostrar 10 repeticiones 
 con números DESCENDENTES, desde el 10 al 1.*/
-function mostrar()
-{
-	var contador;
-	contador=0; 
-	alert('iteración while');
+function mostrar() {
+	let i;
+	let mensaje;
 
-}//FIN DE LA FUNCIÓN
+
+	i = 10;
+
+	while (i || 0) {
+		mensaje = "El numero es ..." + i;
+		i = i - 1;
+		alert(mensaje);
+	}
+}
+//FIN DE LA FUNCIÓN
