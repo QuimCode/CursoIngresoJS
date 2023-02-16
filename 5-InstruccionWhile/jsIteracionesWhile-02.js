@@ -8,7 +8,7 @@ function mostrar() {
 
 	i = 10;
 
-	while (i || 0) {
+	while (i > 0) {
 		mensaje = "El numero es ..." + i;
 		i = i - 1;
 		alert(mensaje);
