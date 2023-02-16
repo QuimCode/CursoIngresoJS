@@ -2,6 +2,7 @@
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar() {	// declarar variables
+	let numeroIngresado
 	let numeroMaximo;
 	let numeroMinimo;
 	let respuesta;
@@ -13,7 +14,7 @@ function mostrar() {	// declarar variables
 	//iniciar variables
 
 	while (respuesta == "Si") {
-		let numeroIngresado = parseInt(prompt("Ingrese su numero."));
+		numeroIngresado = parseInt(prompt("Ingrese su numero."));
 
 		if (numeroMaximo < numeroIngresado) {
 			numeroMaximo = numeroIngresado;
