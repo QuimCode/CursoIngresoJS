@@ -1,14 +1,12 @@
-/* Quimey Alejo Fontan
+/* -Quimey Alejo Fontan
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
 function mostrar() {
 	let numeroIngresado
-	let contador;
 	let respuesta;
 	let sumaPositivos;
 	let multiplicacionNegativos;
 
-	contador = 0;
 	sumaPositivos = 0;
 	multiplicacionNegativos = 3;
 	respuesta = 'si';

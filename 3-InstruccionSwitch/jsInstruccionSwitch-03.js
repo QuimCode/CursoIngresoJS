@@ -1,7 +1,8 @@
-/*Quimey Alejo Fontan*/
+/* -Quimey Alejo Fontan*/
 function mostrar() {
 	//tomo el mes
 	let mes;
+	let mensaje;
 
 	mes = document.getElementById("txtIdMes").value;
 
@@ -17,10 +18,11 @@ function mostrar() {
 		case "Octubre":
 		case "Noviembre":
 		case "Diciembre":
-			alert("Este mes tiene 30 o más días");
+			mensaje = "Este mes tiene 30 o más días";
 			break;
 		case "Febrero":
-			alert("Este mes tiene 29 días");
+			mensaje = "Este mes tiene 29 días";
 			break;
 	}
+	alert(mensaje);
 }//FIN DE LA FUNCIÓN

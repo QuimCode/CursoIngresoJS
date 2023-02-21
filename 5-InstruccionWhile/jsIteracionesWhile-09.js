@@ -1,4 +1,4 @@
-/* Quimey Alejo Fontan
+/* -Quimey Alejo Fontan
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar() {	// declarar variables
@@ -7,13 +7,13 @@ function mostrar() {	// declarar variables
 	let numeroMinimo;
 	let respuesta;
 
-	respuesta = "Si";
+	respuesta = "si";
 	numeroMaximo = 0;
 	numeroMinimo = 0;
 
 	//iniciar variables
 
-	while (respuesta == "Si") {
+	while (respuesta == "si") {
 		numeroIngresado = parseInt(prompt("Ingrese su numero."));
 
 		if (numeroMaximo < numeroIngresado) {

@@ -1,4 +1,4 @@
-/*Quimey Alejo Fontan
+/* -Quimey Alejo Fontan
 Debemos lograr tomar un dato por 'ID'
 y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 
@@ -27,13 +27,14 @@ En el HTML los cambios asignados fueron ...
 	<form class=" animated bounceInLeft FormIngreso">
 	<h1>Ingrese Precio de Producto</h1>
 	<input type="text"  placeholder="Precio de su Prodcuto" id="txtIdNombre"> 
-
-
+//----------------------------------------------------------------------------
 	let productoIngresado;
 	let precioProducto;
-	let valorAumento = 1.30;
+	let valorAumento; 
 	let productoAumentado;
 	let mensaje;
+
+	valorAumento = 1.30;
 
 	productoIngresado = prompt("Ingrese la descripcion del producto debajo:");
 	precioProducto = document.getElementById("txtIdNombre").value;

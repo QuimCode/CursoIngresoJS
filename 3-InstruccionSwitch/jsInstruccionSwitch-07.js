@@ -1,4 +1,4 @@
-/*Quimey Alejo Fontan*/
+/* -Quimey Alejo Fontan*/
 function mostrar() {
 	let destinoViaje;
 	let mensaje;
@@ -19,7 +19,5 @@ function mostrar() {
 			mensaje = "Este";
 			break;
 	}
-
 	alert(mensaje);
-
 }//FIN DE LA FUNCIÓN

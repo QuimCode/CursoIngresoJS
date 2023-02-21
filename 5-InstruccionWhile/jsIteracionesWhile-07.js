@@ -9,21 +9,18 @@ function mostrar() {
 	let promedio;
 	let respuesta;
 
-	numeroIngresado = prompt("Ingrese un número");
-	numeroIngresado = parseInt(numeroIngresado);
 	contador = 0;
 	acumulador = 0;
 	respuesta = "si";
 
-	while (respuesta && "si");
-	{
-		numeroIngresado = prompt("Ingrese un número");
-		numeroIngresado = parseInt(numeroIngresado);
+	while (respuesta == "si") {
+
+		numeroIngresado = parseInt(prompt("Ingrese un número"));
 
 		while (isNaN(numeroIngresado)) {
 			numeroIngresado = parseInt(prompt("Error, ingrese un número válido"));
-			numeroIngresado = parseInt(numeroIngresado);
 		}
+
 		contador = contador + 1;
 		acumulador = acumulador + numeroIngresado;
 		respuesta = prompt("¿Desea seguir ingresando números? (si/no)")

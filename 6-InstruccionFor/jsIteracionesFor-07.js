@@ -1,7 +1,4 @@
-function mostrar()
-{
-
-	alert("ok");
-
+/* -Quimey Alejo Fontan */
+function mostrar() {
 
 }//FIN DE LA FUNCIÓN

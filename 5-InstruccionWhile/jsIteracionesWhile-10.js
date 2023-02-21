@@ -1,4 +1,4 @@
-/*
+/* -Quimey Alejo Fontan
 Al presionar el botón pedir  números  
 hasta que el usuario quiera, mostrar:
 1-Suma de los negativos.
@@ -14,19 +14,26 @@ function mostrar() {
 	//declarar contadores y variables 
 	let respuesta;
 	let numeroIngresado;
+
 	let sumaNegativos;
 	let sumaPositivos;
+
 	let contadorPositivos;
+	let contadorNegativos;
+
 	let contadorCeros;
 	let contadorPares;
+
 	let promedioPositivos;
 	let promedioNegativos;
+
 	let diferencia;
 
 	respuesta = "si";
 	sumaNegativos = 0;
 	sumaPositivos = 0;
 	contadorPositivos = 0;
+	contadorNegativos = 0;
 	contadorCeros = 0;
 	contadorPares = 0;
 
@@ -36,7 +43,7 @@ function mostrar() {
 		numeroIngresado = parseInt(prompt("Ingrese un numero"));
 		//respuesta = prompt("desea continuar?");
 
-		while (isNaN(numeroIngresado)); {
+		while (isNaN(numeroIngresado)) {
 			numeroIngresado = parseInt(prompt("Error, ingrese un numero."));
 		}
 

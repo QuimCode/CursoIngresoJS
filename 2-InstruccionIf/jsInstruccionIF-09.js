@@ -1,4 +1,4 @@
-/*Quimey Alejo Fontan*/
+/* -Quimey Alejo Fontan*/
 function mostrar() {
 	//Genero el número RANDOM entre 1 y 10
 	let numeroRandom;

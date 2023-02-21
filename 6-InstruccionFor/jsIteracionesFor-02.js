@@ -1,5 +1,9 @@
-function mostrar()
-{
+/* -Quimey Alejo Fontan */
+function mostrar() {
+	let i;
+	let mensaje;
 
-	alert("ok");
+	for (i = 10; i > 0; i = i - 1) {
+		document.write("El numero es ... " + i);
+	}
 }

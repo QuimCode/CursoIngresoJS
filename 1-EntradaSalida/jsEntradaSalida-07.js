@@ -1,4 +1,4 @@
-/*Quimey Alejo Fontan
+/* -Quimey Alejo Fontan
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
@@ -35,7 +35,7 @@ function restar() {
 	numResUno = parseInt(numUno);
 	numResDos = parseInt(numDos);
 
-	resultado = num1 - num2;
+	resultado = numResUno - numResDos;
 	mensaje = "El resultado de la resta es " + resultado
 
 	alert(mensaje);
@@ -54,7 +54,7 @@ function multiplicar() {
 	numResUno = parseInt(numUno);
 	numResDos = parseInt(numDos);
 
-	resultado = num1 * num2;
+	resultado = numResUno * numResDos;
 	mensaje = "El resultado de la multiplacion es " + resultado
 
 	alert(mensaje);
@@ -73,7 +73,7 @@ function dividir() {
 	numResUno = parseInt(numUno);
 	numResDos = parseInt(numDos);
 
-	resultado = num1 / num2;
+	resultado = numResUno / numResDos;
 	mensaje = "El resultado de la division es " + resultado
 
 	alert(mensaje);

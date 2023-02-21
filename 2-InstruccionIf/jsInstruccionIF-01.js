@@ -1,4 +1,4 @@
-/*Quimey Alejo Fontan*/
+/* -Quimey Alejo Fontan*/
 function mostrar() {
 	//tomo la edad  
 	let edadIngresada;

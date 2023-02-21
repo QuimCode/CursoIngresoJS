@@ -1,4 +1,4 @@
-/*Quimey Alejo Fontan*/
+/* -Quimey Alejo Fontan*/
 function mostrar() {
 	let estacionAno
 	let destinoViaje;
@@ -11,15 +11,14 @@ function mostrar() {
 	let estadia;
 	let mensaje;
 
-	estacionAno = document.getElementById("txtIdEstacion").value;
-	destinoViaje = document.getElementById("txtIdDestino").value;
-	estadia = parseInt(prompt("Tiempo de su estadia: ?"));
 	precioDia = 15000;
-	precioViaje = estadia * precioDia;
+	estadia = parseInt(prompt("Tiempo de su estadia: ?"));
+	precioViaje = (estadia * precioDia);
 	porcentajeEstacion = 0
 	porcentajePrecio = 0
 	precioTotal = 0
-
+	estacionAno = document.getElementById("txtIdEstacion").value;
+	destinoViaje = document.getElementById("txtIdDestino").value;
 
 	switch (destinoViaje) {
 		case "Bariloche":

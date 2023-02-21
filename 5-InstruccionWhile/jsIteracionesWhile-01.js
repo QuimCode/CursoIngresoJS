@@ -1,4 +1,4 @@
-/* Quimey Alejo Fontan
+/* -Quimey Alejo Fontan
 al presionar el botón mostrar 10 repeticiones 
 con números ASCENDENTE, desde el 1 al 10.*/
 function mostrar() {
@@ -23,15 +23,15 @@ function mostrar() {
 		while (isNaN(edadIngresada) || edadIngresada < 0 || edadIngresada > 100) {
 			edadIngresada = parseInt(prompt("Ingrese un numero valido."));
 		}
-		if (primeraBandera == "true") {
+		if (primeraBandera == true) {
 			edadAdulta = edadIngresada;
 			edadJoven = edadIngresada;
 			nombreAdulto = nombreIngresado;
-			nombreJoven = nombreIngresada;
-			bandera = false;
+			nombreJoven = nombreIngresado;
+			primeraBandera = false;
 		}
 		else {
-			if (edadJoven < edadIngresada) {
+			if (edadJoven > edadIngresada) {
 				edadJoven = edadIngresada;
 				nombreJoven = nombreIngresado;
 			}
@@ -45,6 +45,8 @@ function mostrar() {
 	mensaje = nombreJoven + " es el sujeto joven, y el adulto es " + nombreAdulto;
 	document.write(mensaje);
 }
+
+
 // ---------------------------------------------------
 
 //WHILE genera la linea de codigo muchas veces
@@ -53,9 +55,14 @@ function mostrar() {
 
 // ---------------------------------------------------
 
+
+
+
+
+
+
 // 	let i;
 // 	let mensaje;
-
 
 // 	i = 0;
 
@@ -64,3 +71,4 @@ function mostrar() {
 // 		i = i + 1;
 // 		alert(mensaje);
 // 	}
+// }

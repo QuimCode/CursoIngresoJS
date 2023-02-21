@@ -1,4 +1,4 @@
-/*Quimey Alejo Fontan
+/* -Quimey Alejo Fontan
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resto entre el dividendo y el divisor.
@@ -14,11 +14,10 @@ function SacarResto() {
 
 	Dividiendo = document.getElementById("txtIdNumeroDividendo").value;
 	Divisor = document.getElementById("txtIdNumeroDivisor").value;
-
 	Parse1 = parseInt(Dividiendo);
 	Parse2 = parseInt(Divisor);
 
-	Resultado = Dividiendo % Divisor;
+	Resultado = Parse1 % Parse2;
 
 	Mensaje = "Tu resultado es ... " + Resultado;
 
@@ -46,21 +45,20 @@ function SacarResto() {
 
 	productoUno = document.getElementById("txtIdNumeroDividendo").value;
 	productoDos = document.getElementById("txtIdNumeroDivisor").value;
-
 	parseUno = parseInt(productoUno);
 	parseDos = parseInt(productoDos);
 
 	cuenta = parseUno + parseDos;
-	mensaje = "La suma de ambos productos es ... " + cuenta;
-
+	mensaje = "La suma de ambos productos es ... " + cuenta
 	alert(mensaje);
+	------------------------------------------------------------
 
 	promedio = cuenta / 2;
 	mensaje = "El promedio de los productos es ... " + promedio;
-
 	alert(mensaje);
+	------------------------------------------------------------
 
 	resto = parseUno % parseDos;
-
 	mensaje = "El resto de los productos es ... " + resto;
+	alert(mensaje)
 }*/

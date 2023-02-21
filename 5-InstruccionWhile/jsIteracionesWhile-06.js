@@ -1,24 +1,20 @@
-// Quimey Alejo Fontan
+// -Quimey Alejo Fontan
 function mostrar() {
 	let contador;
 	let acumulador;
 	let numeroIngresado;
 	let promedio;
+	let i;
 
-	numeroIngresado = prompt("Ingrese un número");
-	numeroIngresado = parseInt(numeroIngresado);
-	contador = 0;
+	contador = 5;
 	acumulador = 0;
 
-	for (let i = 0; i < 4; i++) {
-		numeroIngresado = prompt("Ingrese un número");
-		numeroIngresado = parseInt(numeroIngresado);
+	for (i = 0; i < contador; i++) {
+		numeroIngresado = parseInt(prompt("Ingrese los " + contador + " números."));
 
 		while (isNaN(numeroIngresado)) {
-			numeroIngresado = parseInt(prompt("Error, ingrese un número válido"));
-			numeroIngresado = parseInt(numeroIngresado);
+			numeroIngresado = parseInt(prompt("Error, ingrese un número, no letras."));
 		}
-		contador = contador + 1;
 		acumulador = acumulador + numeroIngresado;
 	}
 

@@ -1,3 +1,4 @@
+/* -Quimey Alejo Fontan*/
 function mostrar() {
 	//tomo la edad  
 	let edadIngresada;
@@ -5,10 +6,10 @@ function mostrar() {
 	let mensaje;
 
 	edadIngresada = parseInt(document.getElementById("txtIdEdad").value);
-	estadoCivil = document.getElementById("estadoCivil").value;
+	estadoCivil = document.getElementById("txtEstadoCivil").value;
 
 	if (edadIngresada < 18 && estadoCivil != "Soltero") {
-		mensaje = "Es muy pequeño para NO ser soltero."
+		mensaje = "Eres muy pequeño para NO ser soltero."
 		alert(mensaje)
 	}
 

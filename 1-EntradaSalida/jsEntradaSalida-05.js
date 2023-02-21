@@ -1,4 +1,4 @@
-/*Quimey Alejo Fontan
+/* -Quimey Alejo Fontan
 Debemos lograr tomar nombre y edad por ID y mostrarlos concatenados 
 ej.: "Usted se llama José y tiene 66 años" 	*/
 
@@ -24,13 +24,16 @@ function mostrar() {
 // function mostrar() {
 
 // 	let nombreIngresado;
-// 	let apellidoIngresado = "Perez";
+// 	let apellidoIngresado;
 // 	let edadIngresada;
 // 	let mensaje;
 
-// 	nombreIngresado = document.getElementById("txtIdNombre").value;
-// 	edadIngresada = document.getElementById("txtIdEdad").value;
+//	apellidoIngresado = "Perez";
 
-// 	mensaje = apellidoIngresado + ", usted se llama " + nombreIngresado + " y tiene " + edadIngresada + " años.";
+// 	nombreIngresado = document.getElementById("txtIdNombre").value;
+// 	edadIngresada = parseInt(document.getElementById("txtIdEdad").value);
+
+
+// 	mensaje = apellidoIngresado + ", Usted se llama " + nombreIngresado + " y tiene " + edadIngresada + " años.";
 // 	alert(mensaje);
 // }

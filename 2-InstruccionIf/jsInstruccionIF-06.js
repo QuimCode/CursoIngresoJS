@@ -1,4 +1,4 @@
-/*Quimey Alejo Fontan*/
+/* -Quimey Alejo Fontan*/
 function mostrar() {
 	//tomo la edad 
 	let edadIngresada;
@@ -6,14 +6,15 @@ function mostrar() {
 	edadIngresada = parseInt(document.getElementById("txtIdEdad").value);
 
 	if (edadIngresada >= 18) {
-		alert("Eres Mayor de Edad.");
+		mensaje = "Eres Mayor de Edad.";
 	}
 	else {
 		if (edadIngresada <= 17 && edadIngresada >= 13) {
-			alert("Eres Adolecente.")
+			mensaje = "Eres Adolecente.";
 		}
 		else {
-			alert("Eres un niño.")
+			mensaje = "Eres un niño.";
 		}
 	}
+	alert(mensaje);
 }//FIN DE LA FUNCIÓN
