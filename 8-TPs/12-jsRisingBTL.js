@@ -31,14 +31,19 @@ function ComenzarIngreso() {
 		respuesta = prompt("¿ Desea continuar ? (si/no)")
 
 		while (respuesta == "si") {
-			edadIngresada = parseInt(prompt("Ingrese su edad numericamente; desde 18 a 90 años"));
+
+			edadIngresada = parseInt(prompt("Ingrese su edad numericamente; desde 18 a 90 años."));
 
 			while (isNaN(edadIngresada)) {
-				edadIngresada = parseInt(prompt("INCORRECTO, ingrese un valor numerico para la edad."));
-			}
 
-			if (edadIngresada >= 18 && edadIngresada <= 90) {
-				document.getElementById("txtIdEdad").value = "Su edad es " + edadIngresada;
+				edadIngresada = parseInt(prompt("INCORRECTO, ingrese su edad con valoresnumericos."));
+
+				if (edadIngresada >= 18 && edadIngresada <= 90) {
+					document.getElementById("txtIdEdad").value = "Su edad es " + edadIngresada;
+				}
+				else {
+					edadIngresada = parseInt(prompt("INCORRECTO, ingrese un valor numerico valido entre 18-90 años."));
+				}
 			}
 			//--------------------------------------------------------------------------------------------
 
@@ -47,8 +52,8 @@ function ComenzarIngreso() {
 			while (!isNaN(sexoIngresado)) {
 				sexoIngresado = prompt("INCORRECTO, ingrese un valor alfabetico para el sexo.");
 
-				if (sexoIngresado != "m" || sexoIngresado != "f") {
-					sexoIngresado = prompt("INCORRECTO, ingrese un valor alfabetico para el sexo.");
+				if (sexoIngresado != "m" && sexoIngresado != "f") {
+					sexoIngresado = prompt("INCORRECTO, ingrese un valor alfabetico asignado para el sexo (f/m).");
 				}
 			}
 
@@ -63,6 +68,10 @@ function ComenzarIngreso() {
 			//--------------------------------------------------------------------------------------------
 
 			estadoCivilIngresado = parseInt(prompt("Ingrese su estado civil: '1'-Para soltero, '2'-Para casados, '3'-Para divorciados y '4'-Para viudos"));
+
+			while (isNaN(estadoCivilIngresado)) {
+				estadoCivilIngresado = parseInt(prompt("INCORRECTO, ingrese un un valor numerico asignado (1-2-3-4)"));
+			}
 
 			if (estadoCivilIngresado == "1") {
 				estadoCivilIngresado = "Soltero"
@@ -94,8 +103,9 @@ function ComenzarIngreso() {
 			}
 
 			if (sueldoIngresado > "80000") {
-				mensaje = "Genial su sueldo a sido registrado, continue con el censo";
+				mensaje = "Genial su sueldo a sido registrado, continue apretando en 'ACEPTAR'";
 				alert(mensaje);
+				document.getElementById("txtIdSueldo").value = "Su sueldo es de " + sueldoIngresado + " pesos.";
 			}
 			else {
 				sueldoIngresado < "80000";
@@ -104,7 +114,13 @@ function ComenzarIngreso() {
 				break;
 			}
 			//--------------------------------------------------------------------------------------------
+			legajoIngresado = parseInt(prompt("Ingrese el numero de legajo de 4 digitos, SIN CEROS A LA IZQUIERDA."));
 
+			while (isNaN(legajoIngresado)) {
+				parseInt(prompt("INCORRECTO, Ingrese el legajo solo con valores numericos y SIN ceros a la izquierda, por favor ingreselo de nuevo."));
+			}
+
+			document.getElementById("txtIdLegajo").value = "Su legajo es " + legajoIngresado;
 
 			//--------------------------------------------------------------------------------------------
 
@@ -115,18 +131,18 @@ function ComenzarIngreso() {
 			}
 
 			if (nacionalidadIngresada == "A") {
-				nacionalidadIngresada = "Argentino"
+				nacionalidadIngresada = "Argentina/o"
 				document.getElementById("txtIdNacionalidad").value = "Su nacionalidad es " + nacionalidadIngresada;
 			}
 			else {
 
 				if (nacionalidadIngresada == "E") {
-					nacionalidadIngresada = "Extranjero"
+					nacionalidadIngresada = "Extranjera/o"
 					document.getElementById("txtIdNacionalidad").value = "Su nacionalidad es " + nacionalidadIngresada;
 				}
 
 				else if (nacionalidadIngresada == "N") {
-					nacionalidadIngresada = "Nacionalizado"
+					nacionalidadIngresada = "Nacionalizada/o"
 					document.getElementById("txtIdNacionalidad").value = "Su nacionalidad es " + nacionalidadIngresada;
 				}
 			}
