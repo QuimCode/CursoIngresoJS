@@ -25,7 +25,7 @@ function ComenzarIngreso() {
 	respuesta = "si";
 	//--------------------------------------------------------------------------------------------
 
-	for (i = 0; i < 1; i++) {
+	for (i = 0; i < 1; i + 1) {
 		mensaje = "Esta a punto de comenzar un Censo de BTL";
 		alert(mensaje)
 		respuesta = prompt("¿ Desea continuar ? (si/no)")
@@ -36,7 +36,7 @@ function ComenzarIngreso() {
 
 			while (isNaN(edadIngresada)) {
 
-				edadIngresada = parseInt(prompt("INCORRECTO, ingrese su edad con valoresnumericos."));
+				edadIngresada = parseInt(prompt("INCORRECTO, ingrese su edad con valores numericos."));
 
 				if (edadIngresada >= 18 && edadIngresada <= 90) {
 					document.getElementById("txtIdEdad").value = "Su edad es " + edadIngresada;
@@ -47,7 +47,7 @@ function ComenzarIngreso() {
 			}
 			//--------------------------------------------------------------------------------------------
 
-			sexoIngresado = prompt("Ingrese su sexo alfabeticamente; (m/f)");
+			sexoIngresado = prompt("Ingrese su sexo alfabeticamente: (m/f).");
 
 			while (!isNaN(sexoIngresado)) {
 				sexoIngresado = prompt("INCORRECTO, ingrese un valor alfabetico para el sexo.");
@@ -67,7 +67,7 @@ function ComenzarIngreso() {
 			}
 			//--------------------------------------------------------------------------------------------
 
-			estadoCivilIngresado = parseInt(prompt("Ingrese su estado civil: '1'-Para soltero, '2'-Para casados, '3'-Para divorciados y '4'-Para viudos"));
+			estadoCivilIngresado = parseInt(prompt("Ingrese su estado civil: '1'-Para soltero, '2'-Para casados, '3'-Para divorciado y '4'-Para viudo"));
 
 			while (isNaN(estadoCivilIngresado)) {
 				estadoCivilIngresado = parseInt(prompt("INCORRECTO, ingrese un un valor numerico asignado (1-2-3-4)"));
@@ -102,7 +102,7 @@ function ComenzarIngreso() {
 				sueldoIngresado = parseInt(prompt("IINCORRECTO, ingrese su sueldo a traves de valores numericos"));
 			}
 
-			if (sueldoIngresado > "80000") {
+			if (sueldoIngresado >= "80000") {
 				mensaje = "Genial su sueldo a sido registrado, continue apretando en 'ACEPTAR'";
 				alert(mensaje);
 				document.getElementById("txtIdSueldo").value = "Su sueldo es de " + sueldoIngresado + " pesos.";
@@ -127,7 +127,7 @@ function ComenzarIngreso() {
 			nacionalidadIngresada = prompt("Ingrese su nacionalidad: “A”-para argentinos, “E”-para extranjeros, “N”-para nacionalizados.");
 
 			while (!isNaN(nacionalidadIngresada)) {
-				estadoCivilIngresado = prompt("INCORRECTO, ingrese un valor alfabetico asignado para el estado nacional.");
+				estadoCivilIngresado = prompt("INCORRECTO, ingrese un valor alfabetico asignado para el estado nacional ('A'/'E'/'N').");
 			}
 
 			if (nacionalidadIngresada == "A") {
@@ -147,7 +147,7 @@ function ComenzarIngreso() {
 				}
 			}
 
-			respuesta = prompt("¿ Desea hacer otro censo de BTL ? (si/no)")
+			respuesta = prompt("Genial, ahterminado el censo, gracias por su tiempo. ¿ Desea hacer otro censo de BTL ? (si/no)")
 			if (respuesta == "no") {
 				break;
 			}

@@ -24,20 +24,16 @@ function mostrar() {
 
 	while (ingreso_datos == "si") {
 		nombre = prompt("Ingrese su nombre")
-		edad = prompt("Ingrese su edad");
-		edad = parseInt(edad);
+		edad = parseInt(prompt("Ingrese su edad"));
 		while (edad < 0 || edad > 100) {
-			edad = prompt("Ingrese su edad");
-			edad = parseInt(edad);
-
+			edad = parseInt(prompt("Ingrese su edad dentro de los valores esperados (0-100"));
 		}
 
-		temperaturaCorporal = prompt("Ingrese su temperaturaCorporal");
-		temperaturaCorporal = parseInt(temperaturaCorporal);
+		temperaturaCorporal = parseInt(prompt("Ingrese su temperaturaCorporal"));
+
 		while (temperaturaCorporal < 35 || temperaturaCorporal > 45) {
 			temperaturaCorporal = prompt("Ingrese su temperaturaCorporal");
 			temperaturaCorporal = parseInt(temperaturaCorporal);
-
 		}
 
 		sexo = prompt("Ingrese su sexo");
